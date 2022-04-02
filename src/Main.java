@@ -8,6 +8,7 @@ public class Main {
         int n = scan.nextInt();
         System.out.println("¬ведите кол-во деревьев, которое должно остатьс€");
         int m = scan.nextInt();
+
         int space = 1;
         int count = n - m + 1;
         while(m + (space * (m - 1)) - 1 <= n){
