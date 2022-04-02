@@ -4,11 +4,10 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Введите общее кол-во деревьев");
+        System.out.println("Р’РІРµРґРёС‚Рµ РѕР±С‰РµРµ РєРѕР»-РІРѕ РґРµСЂРµРІСЊРµРІ");
         int n = scan.nextInt();
-        System.out.println("Введите кол-во деревьев, которое должно остаться");
+        System.out.println("Р’РІРµРґРёС‚Рµ РєРѕР»-РІРѕ РґРµСЂРµРІСЊРµРІ, РєРѕС‚РѕСЂРѕРµ РґРѕР»Р¶РЅРѕ РѕСЃС‚Р°С‚СЊСЃСЏ");
         int m = scan.nextInt();
-
         int space = 1;
         int count = n - m + 1;
         while(m + (space * (m - 1)) - 1 <= n){
@@ -16,6 +15,6 @@ public class Main {
                 count += n - (m + (space * (m - 1))) + 1;
             space++;
         }
-        System.out.println("Кол-во способов: " + count);
+        System.out.println("РљРѕР»-РІРѕ СЃРїРѕСЃРѕР±РѕРІ: " + count);
     }
 }
